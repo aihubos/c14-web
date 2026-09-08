@@ -4,3 +4,11 @@ html{scroll-behavior:smooth}.aircon-page em{font-style:normal;color:#235caa}.ac-
 .ac-blog-logo{display:flex;align-items:center;gap:4px;flex:none;width:86px;height:28px}
 .ac-blog-logo img:first-child{width:28px;height:28px}.ac-blog-logo img:last-child{width:54px;height:27px}
 .ac-references>a:hover .ac-blog-cta{background:#e0f4e7;border-color:#7ece99}
+
+.ac-airflow-gallery{margin:26px 0 30px;align-items:start}
+.ac-airflow-gallery>a{display:block;min-width:0;border:1px solid #d8e4f3;border-radius:18px;overflow:hidden;background:#fff}
+.ac-airflow-gallery figure{margin:0}.ac-airflow-gallery img{display:block;width:100%;height:auto}
+.ac-airflow-gallery figcaption{display:grid;gap:12px;padding:18px;border-top:1px solid #e2eaf3}
+.ac-airflow-gallery figcaption span{font-size:15px;font-weight:700;color:#183d66;line-height:1.5}
+.ac-airflow-gallery figcaption strong{display:flex;align-items:center;justify-content:center;min-height:48px;padding:10px 12px;border-radius:9px;background:#edf4fc;color:#235caa;font-size:14px}
+.ac-airflow-gallery>a:hover{border-color:#92b5e4}.ac-airflow-gallery>a:hover strong{background:#e1edfc}
