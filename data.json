@@ -1,0 +1,290 @@
+{
+  "timeline": [
+    {
+      "date": "2024-01-04",
+      "title": "뉴홈 4차 선택형 사전청약 공고",
+      "state": "사전청약",
+      "body": "화성동탄2 C14 총 610호 중 사전청약 520호. 공고일 2024-01-04.",
+      "sourceLabel": "LH 사전청약 PDF p.1",
+      "sourceUrl": "https://apply.lh.or.kr/lhapply/lhFile.do?fileid=55767003",
+      "status": "official"
+    },
+    {
+      "date": "2024-01-22~23",
+      "title": "특별공급 접수",
+      "state": "사전청약",
+      "body": "기관추천·청년·다자녀·노부모·생애최초·신혼부부, 10:00~17:00.",
+      "sourceLabel": "LH 사전청약 공고 웹·PDF p.21",
+      "sourceUrl": "https://apply.lh.or.kr/lhapply/apply/bfh/slpa/slpaInfo.do?aisTpCd=50&mi=1349&panId=0000000061",
+      "status": "official"
+    },
+    {
+      "date": "2024-01-24~25",
+      "title": "일반공급 접수",
+      "state": "사전청약",
+      "body": "일반공급 우선·잔여, 10:00~17:00.",
+      "sourceLabel": "LH 사전청약 공고 웹·PDF p.21",
+      "sourceUrl": "https://apply.lh.or.kr/lhapply/apply/bfh/slpa/slpaInfo.do?aisTpCd=50&mi=1349&panId=0000000061",
+      "status": "official"
+    },
+    {
+      "date": "2024-03-22",
+      "title": "사전청약 당첨자 발표",
+      "state": "사전청약",
+      "body": "14:00, 뉴홈·LH 청약플러스·모바일앱.",
+      "sourceLabel": "LH 사전청약 공고 웹·PDF p.22",
+      "sourceUrl": "https://apply.lh.or.kr/lhapply/apply/bfh/slpa/slpaInfo.do?aisTpCd=50&mi=1349&panId=0000000061",
+      "status": "official"
+    },
+    {
+      "date": "2024-08",
+      "title": "최초 사업계획승인",
+      "state": "본청약",
+      "body": "본청약 공고문 40쪽은 최초 사업계획승인을 2024년 08월로 기재한다. 2022년 정책 발표 주장과 실제 사업승인일은 구분한다.",
+      "sourceLabel": "LH 본청약 공고 사업승인 안내",
+      "sourceUrl": "https://apply.lh.or.kr/lhapply/lhFile.do?fileid=62892225",
+      "status": "official"
+    },
+    {
+      "date": "2024-11",
+      "title": "조성원가 기준 취지의 국민신문고 회신",
+      "state": "기관답변",
+      "body": "발제자가 2024년 11월 회신으로 기재한 내용은 조성원가 기준 취지와 본청약에서 법령이 달라질 수 있다는 단서를 포함한다. 사본 자체에는 날짜·문서번호가 보이지 않는다.",
+      "sourceLabel": "국민신문고 회신 사본(제공 사진014)",
+      "sourceUrl": "evidence/reply-014.jpg",
+      "status": "provided"
+    },
+    {
+      "date": "2025-04",
+      "title": "사업계획 변경승인 기준",
+      "state": "본청약",
+      "body": "본청약 공고문 40쪽은 홍보물이 2025년 04월 사업계획 변경승인을 기준으로 제작됐다고 기재.",
+      "sourceLabel": "LH 본청약 공고 사업승인 안내",
+      "sourceUrl": "https://apply.lh.or.kr/lhapply/lhFile.do?fileid=62892225",
+      "status": "official"
+    },
+    {
+      "date": "2025-07-31",
+      "title": "본청약 입주자모집공고",
+      "state": "본청약",
+      "body": "52㎡ 520세대·84㎡ 90세대, 총 610세대. 임대보증금과 월임대료는 공고문 표 기준.",
+      "sourceLabel": "LH 본청약 공고 PDF",
+      "sourceUrl": "https://apply.lh.or.kr/lhapply/lhFile.do?fileid=62892225",
+      "status": "official"
+    },
+    {
+      "date": "2025-08-11~19",
+      "title": "본청약 접수",
+      "state": "본청약",
+      "body": "사전청약 당첨자 8/11~12, 특별공급 8/13~14, 일반공급 8/18~19.",
+      "sourceLabel": "LH 본청약 공고 PDF p.4·웹 일정",
+      "sourceUrl": "https://apply.lh.or.kr/lhapply/apply/wt/wrtanc/selectWrtancInfo.do?aisTpCd=52&ccrCnntSysDsCd=02&mi=1026&panId=0000060923&uppAisTpCd=06",
+      "status": "official"
+    },
+    {
+      "date": "2025-09-01",
+      "title": "본청약 당첨자 발표",
+      "state": "본청약",
+      "body": "당첨자 발표일이며 계약일이 아님.",
+      "sourceLabel": "LH 본청약 공고 웹",
+      "sourceUrl": "https://apply.lh.or.kr/lhapply/apply/wt/wrtanc/selectWrtancInfo.do?aisTpCd=52&ccrCnntSysDsCd=02&mi=1026&panId=0000060923&uppAisTpCd=06",
+      "status": "official"
+    },
+    {
+      "date": "2025-12-09~10",
+      "title": "전자계약",
+      "state": "계약",
+      "body": "부동산거래 전자계약시스템. 공고된 계약 일정이며, 개별 세대의 실제 계약일과 정정 통지 수령일은 별도 확인이 필요합니다.",
+      "sourceLabel": "LH 본청약 공고 PDF",
+      "sourceUrl": "https://apply.lh.or.kr/lhapply/lhFile.do?fileid=62892225",
+      "status": "official"
+    },
+    {
+      "date": "2025-12-11~12",
+      "title": "현장계약",
+      "state": "계약",
+      "body": "LH 수원 주택전시관, 10:00~16:00. 공고된 계약 일정이며, 개별 세대의 실제 계약일과 정정 통지 수령일은 별도 확인이 필요합니다.",
+      "sourceLabel": "LH 본청약 공고 PDF",
+      "sourceUrl": "https://apply.lh.or.kr/lhapply/lhFile.do?fileid=62892225",
+      "status": "official"
+    },
+    {
+      "date": "2026-09-04",
+      "title": "LH 민원 답변 착오 사과 발언",
+      "state": "토론회",
+      "body": "영상 전사 1:39:19~1:39:24에서 실무진 민원 답변 착오를 사과. 번복 통지의 별도 공식 문서 날짜는 미확보.",
+      "sourceLabel": "공개 토론회 영상 전사",
+      "sourceUrl": "https://www.youtube.com/watch?v=ZBfcnx8diAg",
+      "status": "provided"
+    },
+    {
+      "date": "미확보",
+      "title": "공식 번복 통지일",
+      "state": "확인필요",
+      "body": "공고·접수·계약 전후 어느 시점에 어떤 문서로 번복했는지 원자료 제출 필요.",
+      "sourceLabel": "원문 미확보",
+      "sourceUrl": "",
+      "status": "pending"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "LH C14 본청약 공고 PDF",
+      "url": "https://apply.lh.or.kr/lhapply/lhFile.do?fileid=62892225",
+      "detail": "2025-07-31 공고; 일정·공급·사업계획 문구. PDF 쪽수는 공고 원문 기준.",
+      "kind": "official"
+    },
+    {
+      "id": "S02",
+      "title": "LH 뉴홈 4차 사전청약 공고 PDF",
+      "url": "https://apply.lh.or.kr/lhapply/lhFile.do?fileid=55767003",
+      "detail": "2024-01-04 공고, 24쪽; 일정 p.21~22.",
+      "kind": "official"
+    },
+    {
+      "id": "S03",
+      "title": "LH 2023 민간참여 공모 PDF",
+      "url": "https://lh.or.kr/boardDownload.es?bid=0034&list_no=648640&seq=1",
+      "detail": "2023-09-21; C14 용적률 400%(주거 280%), 610호·오피스텔 240호·판매시설 44호, PDF p.1.",
+      "kind": "official"
+    },
+    {
+      "id": "S04",
+      "title": "국민신문고 회신 사본(제공 사진014)",
+      "url": "evidence/reply-014.jpg",
+      "detail": "2024-11은 발제자 기재; 사본 자체의 날짜·문서번호·원문 PDF 미확보. 조성원가 기준 취지와 본청약 법령변경 단서 주장.",
+      "kind": "provided"
+    },
+    {
+      "id": "S05",
+      "title": "공개 토론회 영상",
+      "url": "https://www.youtube.com/watch?v=ZBfcnx8diAg",
+      "detail": "2026-09-04; 1:07:10·1:09:25·1:10:07·1:12:34·1:39:19 발언을 전사 대조.",
+      "kind": "provided"
+    },
+    {
+      "id": "S06",
+      "title": "대표 발제자료",
+      "url": "downloads/07-forum-booklet.pdf",
+      "detail": "photos008~017, 복원책자 p.9~18; 제공 자료.",
+      "kind": "provided"
+    },
+    {
+      "id": "S07",
+      "title": "대법원 2009다97079",
+      "url": "https://www.law.go.kr/LSW/precInfoP.do?evtNo=2009%EB%8B%A497079",
+      "detail": "2011.4.21 전원합의체. 구 임대주택법상 자가 개발 택지에 조성원가 할인 공급기준 유추 적용. C14 위법 확정 판결은 아님.",
+      "kind": "legal"
+    },
+    {
+      "id": "S08",
+      "title": "대법원 2014다207764",
+      "url": "https://www.law.go.kr/LSW/precInfoP.do?precSeq=184416",
+      "detail": "2016.12.1. 최초 사업계획승인 당시 기준 검토 근거. C14 사실관계·법령 연혁과 별도 대조 필요.",
+      "kind": "legal"
+    },
+    {
+      "id": "S09",
+      "title": "대법원 96누18380",
+      "url": "https://www.law.go.kr/LSW/precInfoP.do?evtNo=96%EB%88%8418380",
+      "detail": "토지형질변경행위불허가처분취소 사건(종교법인의 토지 형질변경 신청); 원심 파기환송. 공적 견해는 조직 지위·임무·경위 등 실질로 판단한다는 일반법리.",
+      "kind": "legal"
+    },
+    {
+      "id": "S10",
+      "title": "공공주택 특별법 시행규칙",
+      "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=287455",
+      "detail": "현행 법령 확인 기준일 2026-09-07.",
+      "kind": "law"
+    },
+    {
+      "id": "S11",
+      "title": "택지개발업무처리지침",
+      "url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000252740",
+      "detail": "행정규칙 원문, 기준일 2026-09-07.",
+      "kind": "law"
+    },
+    {
+      "id": "S12",
+      "title": "MTN 김찬호 ‘집값 오를수록 LH 회수액·당첨자 부담’",
+      "url": "https://v.daum.net/v/20260904153500705",
+      "detail": "2026-09-04 기사; 장문 복제 없이 근거 목록만 사용.",
+      "kind": "media"
+    },
+    {
+      "id": "S13",
+      "title": "대한민국 정책브리핑 · 국토부 10년 임대 분양전환 지원대책",
+      "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148856483",
+      "detail": "2018-12-18, 장기대출·분할납부·임대연장 등의 과거 정책 대응. C14에 확정된 지원 약속은 아님.",
+      "kind": "policy"
+    },
+    {
+      "id": "S14",
+      "title": "권소현, ‘갈등 깊어지는 10년 공공임대 분양전환…민간임대 위축되나’",
+      "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02660086619241720",
+      "detail": "이데일리, 2018-06-14.",
+      "kind": "media"
+    },
+    {
+      "id": "S15",
+      "title": "문형수, ‘10년공공건설임대주택의 분양전환 사례 분석 및 개선방안 연구’",
+      "url": "https://www.dbpia.co.kr/journal/detail?nodeId=T15797547",
+      "detail": "충남대 산업대학원 석사, 2021; 초록·서지만 확인.",
+      "kind": "paper"
+    },
+    {
+      "id": "S16",
+      "title": "이중근, ‘5년공공건설임대주택의 분양전환가격 산정제도의 위헌성 연구’",
+      "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002902021",
+      "detail": "안암법학 65(2022) 173–229, DOI 10.22822/alr..65.202211.173; 초록·서지만 확인. 가격 규제를 비판하는 저자 견해로 위헌 판결이나 학계 합의를 뜻하지 않음.",
+      "kind": "paper"
+    }
+  ],
+  "downloads": [
+    {
+      "title": "공식 배포자료",
+      "pages": 16,
+      "pptx": "downloads/01-official.pptx",
+      "pdf": "downloads/01-official.pdf"
+    },
+    {
+      "title": "대자보",
+      "pages": 1,
+      "pptx": "downloads/02-poster.pptx",
+      "pdf": "downloads/02-poster.pdf"
+    },
+    {
+      "title": "설명 요약본",
+      "pages": 3,
+      "pptx": "downloads/03-summary.pptx",
+      "pdf": "downloads/03-summary.pdf"
+    },
+    {
+      "title": "조성원가 타임라인",
+      "pages": 3,
+      "pptx": "downloads/04-timeline.pptx",
+      "pdf": "downloads/04-timeline.pdf"
+    },
+    {
+      "title": "박병호 팀장 발언 반박문",
+      "pages": 5,
+      "pptx": "downloads/05-rebuttal.pptx",
+      "pdf": "downloads/05-rebuttal.pdf"
+    },
+    {
+      "title": "국감 질의서·자료요구서",
+      "pages": 4,
+      "pptx": "downloads/06-questions.pptx",
+      "pdf": "downloads/06-questions.pdf"
+    }
+  ],
+  "quote": {
+    "time": "2026-09-04 1:10:07–1:10:10",
+    "url": "https://www.youtube.com/watch?v=ZBfcnx8diAg&t=4207s",
+    "text": "6억의 시세 차익이 이미 담보가 됐습니다.",
+    "context": "박병호 LH 팀장 · 2026.09.04 공개 토론회. 영상 자막·원음 전사 대조.",
+    "response": "E 9억·L 15억 가정이면 F 12억, L−F 3억. 3억도 확정 이익이 아닙니다."
+  },
+  "updated": "2026-09-07"
+}

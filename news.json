@@ -1,0 +1,63 @@
+[
+  {
+    "id": "yonhap-newhome-20260907",
+    "engagement": true,
+    "platform": "네이버",
+    "title": "정희용, '뉴홈 방지법' 발의…\"조건 변경에 피해 보면 정부지원\"",
+    "publisher": "연합뉴스",
+    "published": "2026-09-07",
+    "url": "https://n.news.naver.com/article/001/0016294017?sid=100",
+    "summary": "공공주택 조건 변경에 따른 피해 지원 법안 발의 소식입니다.",
+    "originalUrl": "https://www.yna.co.kr/view/AKR20260907075800001"
+  },
+  {
+    "title": "LH, 화성동탄2 택지개발사업지구 공공임대주택 입주자 모집",
+    "publisher": "뉴스핌",
+    "published": "2025-07-31",
+    "url": "https://www.newspim.com/news/view/20250731001146",
+    "summary": "LH가 화성동탄2 C-14블록 6년 분양전환 공공임대 610호를 모집하고, 최고 46층 4개 동·2028년 7월 입주 예정이라고 보도했다.",
+    "engagement": false,
+    "id": "newspim-recruitment-20250731",
+    "platform": "언론사"
+  },
+  {
+    "title": "6년 살고 분양받으라더니…선택형 공공임대, 자금 부담 논란",
+    "publisher": "뉴스핌",
+    "published": "2026-09-07",
+    "url": "https://member.newspim.com/news/view/20260907000622",
+    "summary": "C14 입주예정자협의회 토론회 발제와 입주·분양전환 감정가 평균 방식, 주상복합용지 택지비 기준에 관한 부담 논란을 보도했다.",
+    "engagement": false,
+    "id": "newspim-choice-20260907",
+    "platform": "언론사"
+  },
+  {
+    "title": "집값 오를수록 LH 회수액·당첨자 부담↑…'선택형 공공임대'의 역설",
+    "publisher": "MTN 머니투데이방송",
+    "published": "2026-09-04",
+    "url": "https://v.daum.net/v/20260904153500705",
+    "summary": "C14 국회 토론회에서 6년 뒤 시세 연동 부담, 주상복합용지 감정평가 택지비, 조성원가 적용 요구가 논의됐다고 보도했다.",
+    "engagement": false,
+    "id": "mtn-choice-20260904",
+    "platform": "다음"
+  },
+  {
+    "title": "분양받을 ‘선택권’ 줬지만…10억 현금 마련해야 하는 공공임대",
+    "publisher": "에너지경제",
+    "published": "2026-09-04",
+    "url": "https://v.daum.net/v/20260904151529861",
+    "summary": "C14의 공공분양에서 6년 선택형 공공임대로의 변경과 조성원가·감정평가 택지비 기준 대립, 분양전환 자금 부담 지적을 보도했다.",
+    "engagement": false,
+    "id": "energy-choice-20260904",
+    "platform": "다음"
+  },
+  {
+    "title": "[경인어젠다] 동탄서 공공임대 허점 “개선해야”",
+    "publisher": "경인일보",
+    "published": "2026-09-06",
+    "url": "https://v.daum.net/v/20260906185658938",
+    "summary": "C14의 엄격한 입주자격과 6년 뒤 분양전환능력 간 괴리, 주상복합용지 감정평가 택지비 쟁점을 전국 제도개선 과제로 보도했다.",
+    "engagement": false,
+    "id": "kyeongin-choice-20260906",
+    "platform": "다음"
+  }
+]

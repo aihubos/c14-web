@@ -1,0 +1,143 @@
+{
+  "asOf": "2026-09-08",
+  "origin": {
+    "name": "화성동탄2 C-14블록",
+    "address": "경기도 화성시 오산동 1021",
+    "lat": 37.1949986,
+    "lon": 127.0974203,
+    "coordinateSource": "https://www.openstreetmap.org/way/1461842150",
+    "basis": "OSM construction way 1461842150 노드 bbox 중심. LH 공식 주소 오산동1021 및 공식 위치도와 대조한 공사부지 근사중심이며 출입구·지적경계 좌표가 아님."
+  },
+  "places": [
+    {
+      "id": "498598390",
+      "name": "화성청계초등학교",
+      "category": "elementary",
+      "label": "초등학교",
+      "lat": 37.1993517,
+      "lon": 127.1019277,
+      "address": "경기도 화성시 동탄대로시범길 39(청계동)",
+      "description": "학교 소식·학사일정·입학 안내는 학교 홈페이지에서 확인할 수 있습니다.",
+      "assignment": "C14 모집공고 39쪽의 초등학교 배치계획에 이름이 기재되어 있으나, 교육청 학생수용계획에 따라 변경될 수 있습니다.",
+      "officialUrl": "https://hscheonggye-e.goehs.kr/",
+      "coordinateSource": "https://www.openstreetmap.org/way/498598390"
+    },
+    {
+      "id": "1329501196",
+      "name": "여울초등학교",
+      "category": "elementary",
+      "label": "초등학교",
+      "lat": 37.195073,
+      "lon": 127.0889579,
+      "address": "경기도 화성시 동탄감배산로 95(오산동)",
+      "description": "주변 초등학교의 위치를 비교하기 위한 정보입니다.",
+      "assignment": "주변 학교 정보이며 C14의 배정예정학교로 확인된 것은 아닙니다.",
+      "officialUrl": "https://dt-yeoul-e.goehs.kr/",
+      "coordinateSource": "https://www.openstreetmap.org/way/1329501196"
+    },
+    {
+      "id": "498598389",
+      "name": "청계중학교",
+      "category": "middle",
+      "label": "중학교",
+      "lat": 37.1995814,
+      "lon": 127.1029759,
+      "address": "경기도 화성시 동탄대로시범길 47(청계동)",
+      "description": "학사일정과 학교생활 안내를 학교 홈페이지에서 확인하세요.",
+      "assignment": "동탄2-1중학군 내 학교로 공고에 열거되지만 개별 배정은 확정되지 않았습니다.",
+      "officialUrl": "https://chonggye-m.goehs.kr/",
+      "coordinateSource": "https://www.openstreetmap.org/way/498598389"
+    },
+    {
+      "id": "619948538",
+      "name": "이산중학교",
+      "category": "middle",
+      "label": "중학교",
+      "lat": 37.1910192,
+      "lon": 127.0891291,
+      "address": "경기도 화성시 동탄감배산로 51(여울동)",
+      "description": "학교생활·전입학 안내를 공식 홈페이지에서 확인하세요.",
+      "assignment": "동탄2-1중학군 내 학교로 공고에 열거되지만 개별 배정은 확정되지 않았습니다.",
+      "officialUrl": "https://esan-m.goehs.kr/",
+      "coordinateSource": "https://www.openstreetmap.org/way/619948538"
+    },
+    {
+      "id": "619948537",
+      "name": "이산고등학교",
+      "category": "high",
+      "label": "고등학교",
+      "lat": 37.1909761,
+      "lon": 127.0869631,
+      "address": "경기도 화성시 동탄기흥로353번길 61(여울동)",
+      "description": "입학전형과 지원 일정은 해당 연도의 공식 안내를 확인하세요.",
+      "assignment": "주변 고교 정보이며 C14의 단일 배정학교가 아닙니다. 개별 지원·배정 기준은 교육청 최신 안내를 확인해야 합니다.",
+      "officialUrl": "https://esan-h.goehs.kr/",
+      "coordinateSource": "https://www.openstreetmap.org/way/619948537"
+    },
+    {
+      "id": "5535381367",
+      "name": "동탄역(SRT·GTX-A)",
+      "category": "life",
+      "label": "교통",
+      "lat": 37.2003594,
+      "lon": 127.0955764,
+      "address": "경기도 화성시 동탄역로 151",
+      "description": "SRT와 GTX-A를 이용할 수 있는 동탄역입니다. 열차 시각과 운임은 운영기관에서 확인하세요.",
+      "assignment": "",
+      "officialUrl": "https://www.srail.or.kr/cms/archive.do?pageId=KR0406020000",
+      "coordinateSource": "https://www.openstreetmap.org/node/5535381367"
+    },
+    {
+      "id": "1242126661",
+      "name": "롯데백화점 동탄점",
+      "category": "life",
+      "label": "쇼핑",
+      "lat": 37.2005618,
+      "lon": 127.0974646,
+      "address": "경기도 화성시 동탄역로 160(오산동)",
+      "description": "쇼핑·식당가·문화시설 정보와 영업시간을 공식 점포 안내에서 확인하세요.",
+      "assignment": "",
+      "officialUrl": "https://minfo.lotteshopping.com/dongtan/main/",
+      "coordinateSource": "https://www.openstreetmap.org/way/1242126661"
+    },
+    {
+      "id": "1240795624",
+      "name": "트레이더스 홀세일 클럽 동탄점",
+      "category": "life",
+      "label": "쇼핑",
+      "lat": 37.1936354,
+      "lon": 127.0972029,
+      "address": "경기 화성시 동탄구 동탄대로 451(여울동), 지번 여울동 1022",
+      "description": "생활용품과 식료품을 구입할 수 있는 창고형 매장입니다. 휴점일은 방문 전 확인하세요.",
+      "assignment": "",
+      "officialUrl": "https://eapp.emart.com/branch/view.do?id=2021",
+      "coordinateSource": "https://www.openstreetmap.org/way/1240795624"
+    },
+    {
+      "id": "614162145",
+      "name": "여울공원",
+      "category": "life",
+      "label": "공원",
+      "lat": 37.1984167,
+      "lon": 127.0883031,
+      "address": "경기도 화성시 오산동·여울동 일원",
+      "description": "산책과 야외 활동을 위한 주변 공원입니다. 지도상 거리는 공원 부지의 중심점 기준입니다.",
+      "assignment": "",
+      "officialUrl": "https://www.hscity.go.kr/www/partInfo/greenparkSpace/botanicGardens/detailedBusiness.jsp",
+      "coordinateSource": "https://www.openstreetmap.org/way/614162145"
+    },
+    {
+      "id": "1319744855",
+      "name": "자라뫼공원",
+      "category": "life",
+      "label": "공원",
+      "lat": 37.192676,
+      "lon": 127.0857862,
+      "address": "경기도 화성시 동탄2신도시 일원",
+      "description": "단지 서쪽 생활권의 공원입니다. 지도상 거리는 출입구까지의 보행거리가 아닙니다.",
+      "assignment": "",
+      "officialUrl": "https://www.hscity.go.kr/www/partInfo/greenparkSpace/botanicGardens/detailedBusiness.jsp",
+      "coordinateSource": "https://www.openstreetmap.org/way/1319744855"
+    }
+  ]
+}

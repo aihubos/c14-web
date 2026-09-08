@@ -1,0 +1,12 @@
+.motion-player{position:relative;overflow:hidden;border-radius:20px;background:#f2f6fa;isolation:isolate}
+.motion-player video{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}
+.motion-toggle{position:absolute;right:16px;bottom:16px;border:1px solid #d6e0eb;background:#ffffffed;color:#385776;border-radius:22px;padding:9px 15px;font-size:12px;font-weight:650;line-height:1.5;min-height:40px}
+.motion-toggle:hover{background:white;border-color:#1762d1;color:#1762d1}
+.motion-toggle:focus-visible{outline:3px solid #5795ed;outline-offset:3px}
+.hero-visual .motion-player{border-radius:0}.policy-motion{min-width:0}.policy-motion>.motion-player{border:1px solid #dbe5f2}
+.motion-transcript{margin-top:13px;font-size:12px;color:#607084}.motion-transcript>summary{cursor:pointer;padding:8px 2px;font-weight:650}.motion-transcript .policy-statement{margin-top:9px}.motion-transcript p{line-height:1.9}.motion-file{display:inline-block;margin-top:10px;font-size:11px;color:#607084;text-decoration:underline;text-underline-offset:3px}
+.footer .visitor-stats small{display:block;font-size:10px;font-weight:400;color:#607084}.footer>.visitor-stats{min-width:185px}
+@media(max-width:760px){.motion-player{border-radius:15px}.motion-toggle{right:12px;bottom:12px;font-size:11px;padding:8px 12px;min-height:36px}.motion-transcript{font-size:11px}}
+@media print{.motion-toggle,.motion-file{display:none}.motion-player{break-inside:avoid}}
+
+.motion-toggle{display:grid;place-items:center;width:48px;height:48px;min-height:48px;padding:0;border-radius:50%;cursor:pointer}.motion-toggle svg{width:20px;height:20px;fill:currentColor}.motion-toggle:active{transform:scale(.95)}

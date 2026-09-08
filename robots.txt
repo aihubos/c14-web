@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://c14.ai-hub-os.com/sitemap.xml
