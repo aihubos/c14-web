@@ -13,7 +13,7 @@ async function refreshCounts() {
     if(!response.ok)throw Error('Counts unavailable');
     const data=await response.json();
     if(!Array.isArray(data.articles))throw Error('Invalid counts');
-    for(const target of targets){
+    for(const target of document.querySelectorAll('[data-article-metrics]')){
       const item=data.articles.find(article=>article.id===target.dataset.articleMetrics);
       if(!item)throw Error('Missing counts');
       const numbers=document.createElement('span');numbers.className='article-count-values';
@@ -32,7 +32,7 @@ async function refreshCounts() {
       target.title=(item.baselineCheckedAt?'전일 마지막 집계: '+new Date(item.baselineCheckedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})+'. ':'전일 비교 기록이 아직 없습니다. ')+'공감·추천은 네이버 기사 반응의 합계입니다. 수치는 조회 시점에 따라 달라질 수 있습니다.';
     }
   }catch{
-    targets.forEach(target=>{target.textContent='수치 확인 지연 · 기사 원문에서 확인해 주세요.';});
+    document.querySelectorAll('[data-article-metrics]').forEach(target=>{target.textContent='수치 확인 지연 · 기사 원문에서 확인해 주세요.';});
   }finally{
     loading=false;if(button){button.disabled=false;button.textContent='수치 새로고침';}
   }
