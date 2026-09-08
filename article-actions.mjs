@@ -122,6 +122,23 @@
     return true;
   };
 
+  const addShorts = () => {
+    const header = section.querySelector('.article-actions-header');
+    if (!header || section.querySelector('.article-actions-lead')) return;
+    const layout = document.createElement('div');
+    layout.className = 'article-actions-lead';
+    const news = document.createElement('div');
+    news.className = 'article-actions-news';
+    while (header.nextElementSibling) news.append(header.nextElementSibling);
+    layout.append(news);
+    layout.insertAdjacentHTML('beforeend', `
+      <aside class="article-short" aria-label="동탄 C14 관련 유튜브 쇼츠">
+        <div class="article-short-player"><iframe width="224" height="398" src="https://www.youtube-nocookie.com/embed/t2CRU1JVxTs?playsinline=1&amp;rel=0" title="분양도 안 받았는데 ‘6억 차익’? 동탄 C-14 공공임대 사실 바로잡기" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="article-short-caption"><span> YouTube Shorts · 눌러서 재생</span><h3>분양도 안 받았는데<br>‘6억 차익’?</h3><a href="https://www.youtube.com/shorts/t2CRU1JVxTs" target="_blank" rel="noopener noreferrer">YouTube에서 보기 ↗</a></div>
+      </aside>`);
+    section.append(layout);
+  };
+
   fetch('news.json', { credentials: 'same-origin' })
     .then((response) => {
       if (!response.ok) throw new Error(`news.json: ${response.status}`);
@@ -133,5 +150,6 @@
     })
     .catch(() => {
       // Keep the server-rendered section as the usable fallback.
-    });
+    })
+    .finally(addShorts);
 })();
