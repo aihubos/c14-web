@@ -55,7 +55,7 @@
       const participate = document.createElement('span');
       participate.className = 'article-action-participate';
       participate.setAttribute('aria-hidden', 'true');
-      participate.textContent = '댓글·공감 참여 ↗';
+      participate.textContent = '댓글·공감 참여 · 클릭 ↗';
       link.append(participate);
 
       const metrics = document.createElement('div');
