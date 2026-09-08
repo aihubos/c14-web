@@ -1,0 +1,35 @@
+/* 에어컨 구성·가격·납부 인포그래픽 */
+.ac-info-section{padding-block:54px;border-top:1px solid var(--line)}
+.ac-info-heading{max-width:760px;margin-bottom:25px}
+.ac-info-heading .eyebrow{font-size:11px;margin:0 0 12px}
+.ac-info-heading h2{font-size:clamp(27px,3.5vw,39px);line-height:1.25;margin:0 0 16px;letter-spacing:-1px}
+.ac-info-heading p{font-size:14px;line-height:1.8;color:#526780;margin:0}
+.ac-info-heading a,.ac-info-source a{color:#235caa;text-decoration:underline;text-underline-offset:3px}
+.ac-info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.ac-info-plan{margin:0;border:1px solid #d8e4f3;border-radius:18px;overflow:hidden;background:#fff}
+.ac-info-plan img{display:block;width:100%;height:245px;object-fit:contain;padding:14px;background:#f5f8fc}
+.ac-info-plan figcaption{padding:18px 20px 20px}
+.ac-info-plan figcaption strong{display:block;font-size:18px;color:#184d87}
+.ac-info-plan figcaption span{display:block;margin-top:7px;font-size:12px;line-height:1.7;color:#61748a}
+.ac-info-caption{font-size:12px;line-height:1.8;color:#61748a;margin:16px 0 0}
+.ac-info-prices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
+.ac-info-price{padding:20px;border:1px solid #d8e4f3;border-radius:14px;background:#f8fbff}
+.ac-info-price h3{margin:0;font-size:15px;color:#184d87}
+.ac-info-price p{margin:11px 0 0;font-size:13px;line-height:1.75;color:#526780}
+.ac-info-price strong{font-size:20px;color:#173f70;white-space:nowrap}
+.ac-info-price small{font-size:11px;color:#61748a}
+.ac-info-payment{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.ac-info-payment article{padding:20px;border-radius:14px;background:#edf4fc}
+.ac-info-payment span{font-size:12px;color:#526780}
+.ac-info-payment strong{display:block;margin-top:8px;font-size:23px;color:#235caa}
+.ac-info-payment p{margin:7px 0 0;font-size:12px;color:#61748a}
+.ac-info-bar{display:flex;height:13px;overflow:hidden;border-radius:99px;background:#dce8f5;margin-top:17px}
+.ac-info-bar i{display:block;height:100%;font-style:normal}
+.ac-info-bar i:nth-child(1){width:10%;background:#70a3dc}.ac-info-bar i:nth-child(2){width:30%;background:#3f7fc6}.ac-info-bar i:nth-child(3){width:60%;background:#235caa}
+.ac-info-legend{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:11px;font-size:11px;color:#61748a}
+.ac-info-legend b{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;background:#70a3dc}.ac-info-legend span:nth-child(2) b{background:#3f7fc6}.ac-info-legend span:nth-child(3) b{background:#235caa}
+.ac-info-note{margin-top:22px;padding:17px 19px;border-left:3px solid #bd7b3e;border-radius:0 10px 10px 0;background:#fff8ee;color:#526780;font-size:12px;line-height:1.8}
+.ac-info-source{margin-top:17px;font-size:11px;line-height:1.8;color:#61748a}
+@media(max-width:760px){.ac-info-section{padding-block:36px}.ac-info-heading h2{font-size:28px}.ac-info-heading p{font-size:13px}.ac-info-grid,.ac-info-prices,.ac-info-payment{grid-template-columns:1fr}.ac-info-plan img{height:auto;max-height:330px}.ac-info-plan figcaption{padding:16px}.ac-info-price{padding:18px}.ac-info-payment{gap:10px}.ac-info-payment article{padding:17px}.ac-info-payment strong{font-size:22px}}
+
+.ac-info-step{display:flex;align-items:center;gap:12px;font-size:clamp(17px,2vw,21px);margin:34px 0 18px;line-height:1.45}.ac-info-step b{display:grid;place-items:center;flex:none;width:36px;height:36px;border-radius:50%;background:#235caa;color:white;font-size:13px}.ac-info-plan a{display:block}.ac-info-price h3{font-size:23px}.ac-info-price dl{margin:16px 0 0}.ac-info-price dl>div{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-top:1px solid #dbe5f1}.ac-info-price dt{font-size:14px;font-weight:650}.ac-info-price dt small{display:block;font-size:11px;font-weight:400}.ac-info-price dd{margin:0;font-size:clamp(28px,3vw,36px);font-weight:850;line-height:1.25;color:#184d87;font-variant-numeric:tabular-nums}.ac-info-price dd small{margin-left:4px;font-weight:550;font-size:12px}.ac-info-premium{background:#edf4fc;border-color:#9cbce0}.ac-info-payment{margin-top:20px}.ac-info-payment strong{font-size:38px}.ac-info-bar{height:18px}.ac-info-note strong{color:#885620}@media(max-width:760px){.ac-info-payment{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.ac-info-payment article{padding:15px 8px}.ac-info-payment span{font-size:10px}.ac-info-payment strong{font-size:28px}.ac-info-payment p{font-size:10px}.ac-info-plan img{max-height:none}.ac-info-price dl>div{padding-block:12px}}

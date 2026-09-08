@@ -60,3 +60,18 @@
 
 /* Compact utility row: full QR cards remain in the community section. */
 .community-bar .wrap:has(.compact-contacts){flex-wrap:wrap;gap:6px;padding-block:6px}.community-bar .compact-contacts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.community-bar .compact-contacts .community-contact{height:44px;min-height:44px;padding:5px 9px;gap:6px;justify-content:center;border:1px solid #dbe4ee;border-radius:8px;background:#fff;font-size:11px;white-space:nowrap}.compact-contacts .utility-link>img{width:22px;height:22px;object-fit:contain}.compact-contacts .utility-link>.utility-lh{width:42px;background:#173e70;border-radius:4px;padding:4px}.compact-contacts .contact-icon{width:22px;height:22px;flex-basis:22px;border:0;box-shadow:none;background:transparent;border-radius:4px}.compact-contacts .contact-icon::before{display:none}.community-bar .compact-contacts .kakao-contact{min-width:44px}@media(max-width:760px){.community-bar .compact-contacts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;gap:4px}.community-bar .compact-contacts .community-contact{font-size:10px;padding:4px;min-width:0;gap:4px}.compact-contacts .utility-link>img{width:18px;height:18px}.compact-contacts .utility-link>.utility-lh{width:32px}.community-bar .compact-contacts .community-contact:last-child{font-size:9px}}
+
+/* 공통 상단은 본문별 .wrap 폭이나 집계 응답 길이에 영향을 받지 않는다. */
+.community-bar:has(.compact-contacts)>.wrap{width:min(1240px,calc(100% - 80px))}
+.community-bar:has(.compact-contacts) .visitor-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:350px;flex:none;gap:12px}
+.community-bar:has(.compact-contacts) .visitor-stats>span{display:grid;grid-template-columns:auto 1fr;grid-template-rows:20px 16px;align-items:center;gap:0 4px;white-space:nowrap}
+.community-bar:has(.compact-contacts) [data-stat-delta]{grid-column:1/-1;margin:0;min-width:0;overflow:hidden;text-overflow:ellipsis;line-height:16px}
+.shared-header{display:grid;grid-template-columns:max-content minmax(0,1fr) 320px;height:88px;min-height:88px;gap:16px}
+.shared-header .elife-brand{justify-self:start;margin:0}
+.shared-header .area-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;height:58px;gap:4px;margin:0;order:initial}
+.shared-header .area-nav a{min-width:0;height:48px;padding:0 8px;line-height:1.5}
+.shared-header .brand-wordmark img{display:block;width:180px;height:53px;object-fit:contain}
+@media(max-width:1050px){.community-bar:has(.compact-contacts)>.wrap{width:calc(100% - 56px)}.shared-header{grid-template-columns:max-content minmax(0,1fr) 264px}.shared-header .brand-wordmark img{width:155px;height:46px}}
+@media(max-width:760px){.community-bar:has(.compact-contacts)>.wrap{width:calc(100% - 40px)}.community-bar:has(.compact-contacts) .visitor-stats{width:100%}.shared-header{grid-template-columns:minmax(0,1fr) max-content;grid-template-rows:44px 58px;height:137px;min-height:137px;gap:12px 10px;padding-block:12px 10px}.shared-header .elife-brand{justify-self:end}.shared-header .area-nav{grid-column:1/-1}.shared-header .brand-wordmark img{width:145px;height:43px}}
+@media(max-width:360px){.community-bar:has(.compact-contacts)>.wrap{width:calc(100% - 32px)}.shared-header .brand-wordmark img{width:125px;height:37px}.shared-header .elife-brand img{width:36px}.shared-header .elife-brand{gap:6px}.shared-header .elife-brand strong{font-size:14px}}
+.compact-contacts .kakao-contact>span:last-child{white-space:normal;line-height:1.3}
