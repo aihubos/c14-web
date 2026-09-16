@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0d2d52">
-  <title>52A 우리 집 가구 배치 | 동탄역 어반원</title>
+  <title>우리 집 가구 배치 | 동탄역 어반원</title>
   <link rel="preload" href="assets/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="planner.css?v=20260916c">
+  <link rel="stylesheet" href="planner.css?v=20260916d">
 </head>
 <body>
   <header class="planner-header">
@@ -21,16 +21,16 @@
       <span id="save-status" class="save-status" role="status">이 기기에 자동 저장</span>
     </div>
     <div class="header-actions">
-      <button class="icon-button" type="button" data-action="menu" aria-label="메뉴 열기">☰</button>
+      <button class="icon-button" disabled type="button" data-action="menu" aria-label="메뉴 열기">☰</button>
       <button class="outline-button" type="button" data-action="login">로그인</button>
     </div>
   </header>
 
-  <main class="planner-app">
-    <p class="preview-status" role="note"><strong>52A 미리보기</strong> · 가구 배치와 기기 저장을 먼저 사용해 보세요. 계정 저장·공유는 이메일 연결 후 공개됩니다.</p>
+  <main class="planner-app" inert>
+    <p class="preview-status" role="note"><strong>52A · 84A · 84B 미리보기</strong> · 도면 기반 시각화 초안입니다. 실제 구매·설치 치수는 실측해 주세요. 계정 저장·공유는 이메일 연결 후 공개됩니다.</p>
     <section class="quick-start" aria-labelledby="start-heading">
       <div>
-        <p class="section-kicker">52A FLOOR PLANNER</p>
+        <p class="section-kicker">URBANONE FLOOR PLANNER</p>
         <h1 id="start-heading">우리 집을 먼저<br><em>놓아보세요.</em></h1>
         <p class="intro-copy">도면 위에 가구를 놓고, 실제 치수와 동선을 확인해 보세요.</p>
       </div>
@@ -38,10 +38,11 @@
         <button class="primary-button" type="button" data-action="start">배치 시작하기 <span aria-hidden="true">→</span></button>
         <button class="ghost-button" type="button" data-action="projects">내 배치 불러오기</button>
       </div>
-      <p class="plan-note">도면 기준: 52A 확장형 · 시각화용 초안 · 구매 전 실측 확인</p>
+      <p class="plan-note">도면 기준: 52A · 84A · 84B 확장형 · 시각화용 초안 · 구매 전 실측 확인</p>
     </section>
 
     <section class="toolbar" aria-label="배치 도구">
+      <label class="room-picker">평형 선택<select id="type-select" aria-label="평형 선택"><option value="52a-v1">52A 확장형</option><option value="84a-v1">84A 확장형</option><option value="84b-v1">84B 확장형</option></select></label>
       <div class="view-switch" role="group" aria-label="보기 전환">
         <button type="button" data-action="view-2d" class="active" aria-pressed="true">2D 평면</button>
         <button type="button" data-action="view-3d" aria-pressed="false">3D 보기</button>
@@ -132,7 +133,7 @@
 
   <div id="furniture-list" class="sr-only" aria-live="polite"></div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <dialog id="planner-dialog"><div class="dialog-content"><button class="dialog-close" type="button" data-action="close-dialog" aria-label="닫기">×</button><p class="panel-kicker">52A PLANNER</p><h2 id="dialog-title"></h2><div id="dialog-body"></div></div></dialog>
-  <script type="module" src="planner.mjs?v=20260916c"></script>
+  <dialog id="planner-dialog"><div class="dialog-content"><button class="dialog-close" type="button" data-action="close-dialog" aria-label="닫기">×</button><p class="panel-kicker">URBANONE PLANNER</p><h2 id="dialog-title"></h2><div id="dialog-body"></div></div></dialog>
+  <script type="module" src="planner.mjs?v=20260916d"></script>
 </body>
 </html>

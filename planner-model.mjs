@@ -1,3 +1,4 @@
+import {additionalFloors} from './planner-floors.mjs';
 export const floor = {
  version:'52a-v1',name:'52A 확장형',bounds:[0,0,12000,8800],ceilingHeight:2300,
  source:'도면 제공: 입주민 재재님 · 제공 DWG · A04-002 · 단위세대 평면도(확장형)',
@@ -21,6 +22,7 @@ export const floor = {
 const wall=(a,b,thickness=150)=>floor.walls.push({a,b,thickness});
 [[[0,2460],[2300,2460]],[[3350,2460],[4280,2460]],[[4280,2460],[4280,0]],[[4280,0],[5500,0]],[[6990,0],[8250,0]],[[8550,0],[10200,0]],[[11200,0],[12000,0]],[[12000,0],[12000,8190]],[[12000,8190],[10540,8190]],[[8440,8190],[7900,8190]],[[7900,8190],[7900,8800]],[[7900,8800],[7050,8800]],[[4050,8800],[2670,8800]],[[900,8800],[0,8800]],[[0,8800],[0,2460]]].forEach(([a,b])=>wall(a,b,250));
 [[[1800,3090],[0,3090]],[[1800,3090],[1800,4700]],[[1800,5400],[0,5400]],[[3300,5400],[3300,8800]],[[3450,4190],[5300,4190]],[[3450,2600],[3450,4190]],[[7800,2050],[7800,4500]],[[7800,5500],[7800,8190]],[[8050,4400],[9000,4400]],[[9700,4400],[12000,4400]],[[9700,4400],[9700,1850]],[[8050,1850],[9800,1850]],[[10530,1850],[12000,1850]],[[9800,0],[9800,1850]]].forEach(([a,b])=>wall(a,b));
+export const floors={ [floor.version]:floor, ...additionalFloors };
 export const catalog=[
  ['sofa','일자 소파','거실',2200,900,850,'#6c8a9d'],['corner-sofa','코너 소파','거실',2800,1700,850,'#658292'],['tv','TV장','거실',1800,400,500,'#b8926d'],['coffee','거실 테이블','거실',1000,600,400,'#b8926d'],
  ['bed','침대','침실',1600,2100,950,'#b9a0a0'],['nightstand','협탁','침실',450,400,500,'#b8926d'],['wardrobe','옷장','침실',1600,600,2100,'#c0b6a6'],['drawers','서랍장','침실',800,450,1000,'#b8926d'],['vanity','화장대','침실',900,450,750,'#c6ab92'],
@@ -29,9 +31,10 @@ export const catalog=[
 ].map(([type,name,category,w,d,h,color])=>({type,name,category,w,d,h,color}));
 export const uid=()=>crypto.randomUUID();
 export function item(type,x=5600,y=6000){const c=catalog.find(c=>c.type===type);return {...c,id:uid(),x,y,rotation:0,note:'',url:'',locked:false};}
-export function newProject(kind='empty'){const p={id:uid(),schemaVersion:1,title:'나의 52A 배치',floorVersion:floor.version,ceilingHeight:2300,items:[],revision:0};if(kind!=='empty'){p.title=kind==='work'?'재택근무형':'기본 생활형';p.items=[item('sofa',5900,4900),item('tv',5800,8150),item('bed',10200,6100),item('dining',6600,2950),item(kind==='work'?'desk':'bed',1600,6900)];}return p;}
+export function newProject(kind='empty',version='52a-v1'){const f=floors[version];if(!f)throw Error('지원하지 않는 평형입니다.');const p={id:uid(),schemaVersion:1,title:`나의 ${f.name.split(' ')[0]} 배치`,floorVersion:f.version,ceilingHeight:2300,items:[],revision:0};if(kind!=='empty'){p.title=f.name.split(' ')[0]+' · '+(kind==='work'?'재택근무형':'기본 생활형');for(const [rid,type] of [['living','sofa'],['living','tv'],['bed1','bed'],['kitchen','dining'],['bed2',kind==='work'?'desk':'bed']]){const r=f.rooms.find(r=>r.id===rid),xs=r.polygon.map(p=>p[0]),ys=r.polygon.map(p=>p[1]);p.items.push(item(type,(Math.min(...xs)+Math.max(...xs))/2,(Math.min(...ys)+Math.max(...ys))/2+(type==='tv'?1500:type==='sofa'?-1000:0)));}}return p;}
+export function adjustItem(i,key,value){if(i.locked)throw Error('잠금을 먼저 해제해 주세요.');if(!['w','d','rotation'].includes(key)||!Number.isFinite(value))throw Error('올바른 숫자를 입력해 주세요.');if(key!=='rotation'&&(value<10||value>10000))throw Error('가로·세로는 1~1000cm로 입력해 주세요.');i[key]=key==='rotation'?((value%360)+360)%360:value;}
 export function validateProject(p){
- if(!p||p.schemaVersion!==1||p.floorVersion!==floor.version)throw Error('지원하지 않는 배치 파일 또는 도면 버전입니다.');
+ if(!p||p.schemaVersion!==1||!floors[p.floorVersion])throw Error('지원하지 않는 배치 파일 또는 도면 버전입니다.');
  if(typeof p.title!=='string'||!p.title.trim()||p.title.length>80||!Array.isArray(p.items)||p.items.length>100)throw Error('배치 이름 또는 가구 수를 확인해 주세요.');
  if(!Number.isFinite(p.ceilingHeight)||p.ceilingHeight<2000||p.ceilingHeight>4000)throw Error('천장 높이는 200~400cm로 입력해 주세요.');
  const ids=new Set();for(const i of p.items){if(typeof i.id!=='string'||! /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(i.id)||ids.has(i.id)||!catalog.some(c=>c.type===i.type))throw Error('가구 정보가 올바르지 않습니다.');ids.add(i.id);
@@ -44,4 +47,4 @@ export function validateProject(p){
 export function corners(i){const r=i.rotation*Math.PI/180,c=Math.cos(r),s=Math.sin(r);return [[-i.w/2,-i.d/2],[i.w/2,-i.d/2],[i.w/2,i.d/2],[-i.w/2,i.d/2]].map(([x,y])=>[i.x+x*c-y*s,i.y+x*s+y*c]);}
 export function overlaps(a,b){for(const poly of [a,b])for(let n=0;n<poly.length;n++){const p=poly[n],q=poly[(n+1)%poly.length],axis=[q[1]-p[1],p[0]-q[0]],pa=a.map(v=>v[0]*axis[0]+v[1]*axis[1]),pb=b.map(v=>v[0]*axis[0]+v[1]*axis[1]);if(Math.max(...pa)<=Math.min(...pb)||Math.max(...pb)<=Math.min(...pa))return false;}return true;}
 export function wallBox(w){const dx=w.b[0]-w.a[0],dy=w.b[1]-w.a[1];return corners({x:(w.a[0]+w.b[0])/2,y:(w.a[1]+w.b[1])/2,w:Math.hypot(dx,dy),d:w.thickness,rotation:Math.atan2(dy,dx)*180/Math.PI});}
-export function issues(i,items){const p=corners(i),out=[];if(p.some(([x,y])=>x<0||y<0||x>12000||y>8800))out.push('집 경계 밖');if(floor.walls.some(w=>overlaps(p,wallBox(w))))out.push('벽과 겹침');if(floor.fixtures.some(f=>overlaps(p,corners({...f,rotation:0}))))out.push('고정 시설과 겹침');if(items.some(o=>o.id!==i.id&&overlaps(p,corners(o))))out.push('다른 가구와 겹침');if(floor.doors.some(d=>{const r=d.angle*Math.PI/180;const sector=[[d.x,d.y],...Array.from({length:13},(_,k)=>[d.x+Math.cos(r+k*Math.PI/24)*d.width,d.y+Math.sin(r+k*Math.PI/24)*d.width])];return overlaps(p,sector);}))out.push('문 열림 영역 확인');return out;}
+export function issues(i,items,floor=floors['52a-v1']){const p=corners(i),out=[];if(p.some(([x,y])=>x<0||y<0||x>floor.bounds[2]||y>floor.bounds[3]))out.push('집 경계 밖');if(floor.walls.some(w=>overlaps(p,wallBox(w))))out.push('벽과 겹침');if(floor.fixtures.some(f=>overlaps(p,corners({...f,rotation:0}))))out.push('고정 시설과 겹침');if(items.some(o=>o.id!==i.id&&overlaps(p,corners(o))))out.push('다른 가구와 겹침');if(floor.doors.some(d=>{const r=d.angle*Math.PI/180;const sector=[[d.x,d.y],...Array.from({length:13},(_,k)=>[d.x+Math.cos(r+k*Math.PI/24)*d.width,d.y+Math.sin(r+k*Math.PI/24)*d.width])];return overlaps(p,sector);}))out.push('문 열림 영역 확인');return out;}

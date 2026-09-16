@@ -26,3 +26,16 @@
 .preview-status{padding:12px 16px;border:1px solid #cbdce9;background:#eef5fb;border-radius:12px;font-size:16px}.preview-status strong{color:var(--blue)}
 
 .download-ready{display:block;overflow-wrap:anywhere;padding:14px;background:#e1f1fa;color:#145a91;border-radius:9px;min-height:48px}
+
+/* Selected furniture controls stay inside the canvas in both views. */
+.asset-tools{position:absolute;z-index:5;width:264px;padding:10px;border:2px solid #1767bf;border-radius:16px;background:#fff;box-shadow:0 8px 25px #12365425;touch-action:auto;color:#15344f}
+.asset-tools>strong{display:block;font-size:16px;margin:0 0 6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.asset-control-row{display:grid;grid-template-columns:64px 48px minmax(0,1fr) 48px;align-items:center;gap:3px;margin-top:3px}
+.asset-control-row label{font-size:13px;font-weight:700}.asset-control-row button{min-width:48px;min-height:48px;padding:0;font-size:24px;border-radius:9px}
+.asset-control-row input{width:100%;min-width:0;height:48px;padding:2px;text-align:center;font-size:16px;border:1px solid #ccd7e2;border-radius:8px}
+@media(max-width:760px){.asset-tools{width:250px;padding:8px}.asset-control-row{grid-template-columns:54px 48px minmax(0,1fr) 48px}.toolbar .room-picker{min-width:0}.toolbar select{max-width:145px}.canvas-header strong{font-size:17px}}
+
+.asset-tools>strong{padding-right:40px}.asset-close{position:absolute;right:4px;top:0;width:48px;height:40px;min-height:40px;border:0;background:transparent;font-size:24px;color:#25496a}
+
+.toolbar{flex-wrap:wrap}.toolbar>*,.toolbar button{flex-shrink:0;white-space:nowrap}.toolbar .room-picker{font-size:16px}.toolbar button{font-size:16px;min-height:48px}
+@media(max-width:760px){.toolbar{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.toolbar>.room-picker{display:block;justify-self:stretch;font-size:13px}.toolbar>.room-picker select{width:100%;max-width:none;min-width:0}.toolbar>.view-switch{width:100%;align-self:end}.toolbar .view-switch button{min-width:0;flex:1;font-size:14px;padding:0 4px}.toolbar-tools{grid-row:3;grid-column:1}.toolbar-main-actions{grid-row:3;grid-column:2}.asset-close{min-height:48px;height:48px}.asset-tools>strong{min-height:28px}}
