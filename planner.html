@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d2d52">
+  <title>52A 우리 집 가구 배치 | 동탄역 어반원</title>
+  <link rel="preload" href="assets/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="planner.css?v=20260916c">
+</head>
+<body>
+  <header class="planner-header">
+    <a class="planner-brand" href="index.html#site-top" aria-label="동탄역 어반원 C14 메인으로 이동">
+      <img src="assets/urbanone-wordmark.png" alt="동탄역 어반원">
+      <span class="brand-divider" aria-hidden="true"></span>
+      <img class="c14-mark" src="assets/c14-logo.png" alt="C14 블록">
+    </a>
+    <div class="planner-title">
+      <span class="eyebrow">우리 집 가구 배치 · 52A 확장형</span>
+      <label class="project-name-label"><span class="sr-only">배치안 이름</span><input id="project-name" value="52A 기본 배치" aria-label="배치안 이름"></label>
+      <span id="save-status" class="save-status" role="status">이 기기에 자동 저장</span>
+    </div>
+    <div class="header-actions">
+      <button class="icon-button" type="button" data-action="menu" aria-label="메뉴 열기">☰</button>
+      <button class="outline-button" type="button" data-action="login">로그인</button>
+    </div>
+  </header>
+
+  <main class="planner-app">
+    <p class="preview-status" role="note"><strong>52A 미리보기</strong> · 가구 배치와 기기 저장을 먼저 사용해 보세요. 계정 저장·공유는 이메일 연결 후 공개됩니다.</p>
+    <section class="quick-start" aria-labelledby="start-heading">
+      <div>
+        <p class="section-kicker">52A FLOOR PLANNER</p>
+        <h1 id="start-heading">우리 집을 먼저<br><em>놓아보세요.</em></h1>
+        <p class="intro-copy">도면 위에 가구를 놓고, 실제 치수와 동선을 확인해 보세요.</p>
+      </div>
+      <div class="start-actions">
+        <button class="primary-button" type="button" data-action="start">배치 시작하기 <span aria-hidden="true">→</span></button>
+        <button class="ghost-button" type="button" data-action="projects">내 배치 불러오기</button>
+      </div>
+      <p class="plan-note">도면 기준: 52A 확장형 · 시각화용 초안 · 구매 전 실측 확인</p>
+    </section>
+
+    <section class="toolbar" aria-label="배치 도구">
+      <div class="view-switch" role="group" aria-label="보기 전환">
+        <button type="button" data-action="view-2d" class="active" aria-pressed="true">2D 평면</button>
+        <button type="button" data-action="view-3d" aria-pressed="false">3D 보기</button>
+      </div>
+      <label class="room-picker">방 선택
+        <select id="room-select" aria-label="방 선택">
+          <option value="all">집 전체</option>
+          <option value="living">거실·주방</option>
+          <option value="bed1">침실 1</option>
+          <option value="bed2">침실 2</option>
+        </select>
+      </label>
+      <div class="toolbar-tools">
+        <button class="tool-button" type="button" data-action="undo" aria-label="실행 취소">↶ <span>되돌리기</span></button>
+        <button class="tool-button" type="button" data-action="redo" aria-label="다시 실행">↷ <span>다시하기</span></button>
+        <button class="tool-button desktop-only" type="button" data-action="measure">⌖ <span>거리 측정</span></button>
+        <button class="tool-button desktop-only" type="button" data-action="walls">▧ <span>벽 낮추기</span></button>
+      </div>
+      <div class="toolbar-main-actions">
+        <button class="soft-button" type="button" data-action="save">저장</button>
+        <button class="soft-button" type="button" data-action="export">내보내기</button>
+        <button class="primary-small" type="button" data-action="share">공유</button>
+      </div>
+    </section>
+
+    <section class="workspace" aria-label="가구 배치 작업 공간">
+      <aside id="catalog" class="panel catalog-panel" aria-label="가구 목록">
+        <div class="panel-heading">
+          <div><span class="panel-kicker">FURNITURE</span><h2>가구 추가</h2></div>
+          <button class="panel-close mobile-only" type="button" data-action="catalog-close" aria-label="가구 목록 닫기">×</button>
+        </div>
+        <label class="search-field"><span class="sr-only">가구 검색</span><input id="catalog-search" type="search" placeholder="가구 이름 검색" autocomplete="off"><span aria-hidden="true">⌕</span></label>
+        <div class="catalog-tabs" role="tablist" aria-label="가구 분류">
+          <button type="button" class="active" data-category="all" role="tab" aria-selected="true">전체</button>
+          <button type="button" data-category="living" role="tab" aria-selected="false">거실</button>
+          <button type="button" data-category="bedroom" role="tab" aria-selected="false">침실</button>
+          <button type="button" data-category="dining" role="tab" aria-selected="false">주방</button>
+        </div>
+        <div id="catalog-list" class="catalog-list"></div>
+        <button class="custom-furniture" type="button" data-action="custom-furniture">＋ 직접 크기 입력</button>
+      </aside>
+
+      <section class="canvas-panel">
+        <div class="canvas-header">
+          <div><strong>52A 확장형</strong><span>가구를 끌어 배치하세요</span></div>
+          <div class="canvas-controls" aria-label="화면 확대 도구">
+            <button type="button" data-action="zoom-out" aria-label="축소">−</button>
+            <span id="zoom-level" aria-live="polite">100%</span>
+            <button type="button" data-action="zoom-in" aria-label="확대">＋</button>
+            <button type="button" data-action="fit" aria-label="전체 보기">⌗</button>
+          </div>
+        </div>
+        <div id="viewport" class="viewport" tabindex="0" aria-label="52A 평면도. 가구를 배치할 수 있습니다">
+          <svg id="plan-svg" viewBox="0 0 1000 720" role="img" aria-label="52A 확장형 평면도">
+            <rect class="plan-background" x="0" y="0" width="1000" height="720" rx="18"></rect>
+            <g class="plan-grid" aria-hidden="true"><path d="M40 80H960M40 160H960M40 240H960M40 320H960M40 400H960M40 480H960M40 560H960M40 640H960M80 40V680M160 40V680M240 40V680M320 40V680M400 40V680M480 40V680M560 40V680M640 40V680M720 40V680M800 40V680M880 40V680"/></g>
+            <g id="floorplan-shell" class="floorplan-shell">
+              <rect x="74" y="74" width="852" height="572" rx="4"></rect>
+              <path d="M74 400H430V74M430 400H926M630 400V646M630 214H926M430 214H630M760 214V400"></path>
+              <text x="170" y="265">침실 1</text><text x="490" y="155">거실</text><text x="780" y="155">주방·식당</text><text x="180" y="530">침실 2</text><text x="700" y="530">안방</text>
+              <text class="measure-label" x="90" y="58">52A 확장형 (시각화용)</text>
+            </g>
+            <g id="furniture-layer" aria-live="polite"></g>
+          </svg>
+          <div id="three-view" class="three-view" hidden aria-label="52A 3D 보기"></div>
+          <div class="empty-hint" id="empty-hint"><span>＋</span><strong>가구를 추가해 보세요</strong><small>왼쪽 목록에서 선택하거나<br>아래 버튼을 눌러 시작합니다.</small></div>
+        </div>
+        <div class="canvas-footer"><span>⌘ 저장하면 다음 방문에도 이어집니다</span><span>도면 버전 52A-v1</span></div>
+      </section>
+
+      <aside id="inspector" class="panel inspector-panel" aria-label="선택한 가구 설정">
+        <div class="panel-heading"><div><span class="panel-kicker">SELECTED ITEM</span><h2>가구 설정</h2></div><button class="panel-close mobile-only" type="button" data-action="inspector-close" aria-label="설정 닫기">×</button></div>
+        <div id="selection-fields" class="selection-fields"><div class="selection-empty"><span>⌖</span><p>가구를 선택하면<br>크기와 위치를 조절할 수 있어요.</p></div></div>
+        <div class="inspector-divider"></div>
+        <label class="check-row"><input id="snap" type="checkbox" checked><span>5cm 격자에 맞추기</span></label>
+        <label class="check-row"><input id="cad-overlay" type="checkbox"><span>원도 벽선 겹쳐 보기</span></label>
+        <label class="check-row"><input id="doors" type="checkbox" checked><span>문 열림 영역 표시</span></label>
+      </aside>
+    </section>
+
+    <section class="mobile-dock" aria-label="모바일 주요 메뉴">
+      <button type="button" data-action="catalog"><span>＋</span><small>가구 추가</small></button>
+      <button type="button" data-action="inspector"><span>⌖</span><small>선택 설정</small></button>
+      <button type="button" data-action="projects"><span>▤</span><small>내 배치</small></button>
+      <button type="button" data-action="menu"><span>⋯</span><small>더보기</small></button>
+    </section>
+  </main>
+
+  <div id="furniture-list" class="sr-only" aria-live="polite"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="planner-dialog"><div class="dialog-content"><button class="dialog-close" type="button" data-action="close-dialog" aria-label="닫기">×</button><p class="panel-kicker">52A PLANNER</p><h2 id="dialog-title"></h2><div id="dialog-body"></div></div></dialog>
+  <script type="module" src="planner.mjs?v=20260916c"></script>
+</body>
+</html>
