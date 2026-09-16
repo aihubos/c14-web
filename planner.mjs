@@ -4,7 +4,7 @@ const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],svg
 let project=newProject(),user=null,readonly=false,selected=null,mode='2d',three=null,view=[-550,-550,13100,9900],history=[],future=[],pendingType=null,measure=false,measurePoints=[],positioning=false,category='all',lowWalls=true,localTimer,cloudTimer,saving=Promise.resolve(),authEpoch=0;
 const clone=x=>structuredClone(x),escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function el(tag,text,cls){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;}
-function button(text,fn,cls='soft-button'){const e=el('button',text,cls);e.type='button';e.onclick=()=>Promise.resolve(fn()).catch(fail);return e;}
+function button(text,fn,cls='soft-button'){const e=el('button',text,cls);e.type='button';e.onclick=async()=>{try{await fn();}catch(error){fail(error);}};return e;}
 function toast(text){$('#toast').textContent=text;$('#toast').classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').classList.remove('visible'),4500);}
 function fail(e){toast(e.message||'처리하지 못했습니다. 다시 시도해 주세요.');console.warn(e.message);}
 function status(s){$('#save-status').textContent=s;}
