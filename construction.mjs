@@ -35,7 +35,7 @@ if(typeof document!=='undefined')for(const host of document.querySelectorAll('[d
  renderer.render(scene,camera);if(visible&&!paused&&elapsed<1)frame=requestAnimationFrame(render);}
  sceneUpdate=s=>{sky.intensity=s.night?1.1:2.5;sun.intensity=s.night?1.2:3;sun.color.set(s.night?0xb5caff:0xfff0d6);glass.emissive.set(s.night?0x796332:0x000000);render();};sceneUpdate(state);
  pauseButton.onclick=()=>{paused=!paused;if(!paused)start=performance.now();syncButton();render();};reduced.addEventListener('change',e=>{paused=e.matches;syncButton();render();});
- const observer=new ResizeObserver(()=>{const r=container.getBoundingClientRect();renderer.setSize(r.width,r.height,false);const aspect=r.width/r.height;camera.top=6.5;camera.bottom=-6.5;camera.left=-6.5*aspect;camera.right=6.5*aspect;camera.updateProjectionMatrix();render();});observer.observe(container);
+ const observer=new ResizeObserver(()=>{const r=container.getBoundingClientRect();renderer.setSize(r.width,r.height,false);const aspect=r.width/r.height;const halfHeight=Math.max(6.5,8.5/aspect);camera.top=halfHeight;camera.bottom=-halfHeight;camera.left=-halfHeight*aspect;camera.right=halfHeight*aspect;camera.updateProjectionMatrix();render();});observer.observe(container);
  new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;if(visible)render();else cancelAnimationFrame(frame);}).observe(container);
  window.addEventListener('pagehide',()=>cancelAnimationFrame(frame));window.addEventListener('pageshow',()=>render());
  }catch{container.innerHTML='<span class="build-fallback">🏗️<br>입주를 함께 기다립니다</span>';host.querySelector('[data-build-pause]').hidden=true;}
