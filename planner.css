@@ -58,3 +58,9 @@
  #furniture-list{flex:none;max-height:96px;overflow:auto;margin:0;padding:8px 12px}
  #furniture-list h2{display:inline-block;margin:0 12px 0 0;font-size:16px}
 }
+
+.studio-tools{flex:none;padding:8px 14px;background:#f3f1ec;border-bottom:1px solid #d9d9d0}.studio-tools>div{display:flex;flex-wrap:wrap;gap:6px}.studio-tools button{background:#fff;border:1px solid #d4d8d3;padding:6px 14px;border-radius:8px;font-weight:700;font-size:15px}.studio-tools button[aria-pressed=true]{background:#243e43;color:#fff}.studio-tools small{display:block;margin-top:5px;color:#536b6d}.three-view{border-radius:0}.asset-tools{border-color:#477b80;box-shadow:0 12px 35px #243c4922}.canvas-header strong{font-size:20px}.viewport{background:#e9e8e3}.planner-title .eyebrow{letter-spacing:.08em}@media(max-width:760px){.studio-tools{padding:6px}.studio-tools button{flex:1;font-size:13px;padding:4px 8px}.studio-tools small{font-size:12px}}
+
+@media(max-width:760px){.preview-note{font-size:12px;line-height:1.55;padding:8px 12px}.studio-tools small{font-size:11px}.canvas-header{padding:8px 12px}.planner-app{padding-top:8px}}
+
+.viewport:has(.three-view:not([hidden])) .empty-hint{display:none}

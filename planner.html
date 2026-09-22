@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0d2d52">
   <title>우리 집 가구 배치 | 동탄역 어반원</title>
   <link rel="preload" href="assets/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="planner.css?v=20260916e">
+  <link rel="stylesheet" href="planner.css?v=20260922a">
 </head>
 <body>
   <header class="planner-header">
@@ -27,7 +27,7 @@
   </header>
 
   <main class="planner-app" inert>
-    <p class="preview-status" role="note"><strong>52A · 84A · 84B 미리보기</strong> · 도면 기반 시각화 초안입니다. 실제 구매·설치 치수는 실측해 주세요. 계정 저장·공유는 이메일 연결 후 공개됩니다.</p>
+    <p class="preview-status" role="note"><strong>52A · 84A · 84B 미리보기</strong> · 재재님 제공 설계도 기반 · 현장 실측도면은 미확보 · 재질·설비 높이는 시각화 예시입니다. 계정 저장·공유는 이메일 연결 후 공개됩니다.</p>
     <section class="quick-start" aria-labelledby="start-heading">
       <div>
         <p class="section-kicker">URBANONE FLOOR PLANNER</p>
@@ -95,6 +95,7 @@
             <button type="button" data-action="fit" aria-label="전체 보기">⌗</button>
           </div>
         </div>
+        <div id="studio-tools" class="studio-tools" hidden aria-label="3D 스튜디오 도구"><div><button type="button" data-action="studio-overview">공간 전체</button><button type="button" data-action="studio-top">위에서 보기</button><button type="button" data-action="studio-eye">눈높이 시점</button><button type="button" data-action="studio-light" aria-pressed="false">낮 자연광</button></div><small>드래그: 공간 회전 · 선택한 가구 드래그: 이동 · 휠: 확대</small></div>
         <div id="viewport" class="viewport" tabindex="0" aria-label="52A 평면도. 가구를 배치할 수 있습니다">
           <svg id="plan-svg" viewBox="0 0 1000 720" role="img" aria-label="52A 확장형 평면도">
             <rect class="plan-background" x="0" y="0" width="1000" height="720" rx="18"></rect>
@@ -134,6 +135,6 @@
   <div id="furniture-list" class="sr-only" aria-live="polite"></div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <dialog id="planner-dialog"><div class="dialog-content"><button class="dialog-close" type="button" data-action="close-dialog" aria-label="닫기">×</button><p class="panel-kicker">URBANONE PLANNER</p><h2 id="dialog-title"></h2><div id="dialog-body"></div></div></dialog>
-  <script type="module" src="planner.mjs?v=20260916d"></script>
+  <script type="module" src="planner.mjs?v=20260922a"></script>
 </body>
 </html>
